@@ -1,0 +1,19 @@
+# Secrets
+.env
+
+# Oracle/sample generated logs
+*.log
+
+# VS Code local state
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+diagrama_HR.pdf
+labs/lab01/Laborator1_PLSQL.docx
+labs/lab00/Laborator0_PLSQL.docx

@@ -1,0 +1,14 @@
+services:
+  oracle:
+    image: container-registry.oracle.com/database/free:23.26.3.0
+    container_name: database-labs-oracle
+    ports:
+      - "1521:1521"
+    environment:
+      ORACLE_PWD: ${ORACLE_PASSWORD}
+    volumes:
+      - oracle-data:/opt/oracle/oradata
+    restart: unless-stopped
+
+volumes:
+  oracle-data:
